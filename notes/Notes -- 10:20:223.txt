@@ -1,0 +1,14 @@
+- Copy can be changed in a CMS
+- Enable payments at the end
+- Add keywords in the endorsements flyout
+ - Health issues + wellness topics (IBS and Gut-health)
+ - Hide Strategies
+- Short link required for basic details
+- Some pros with published profiles but don't have the basic minimum data of what is required now
+ - Flush out the bad profiles that are live
+- Stripe by default, don't do manual payments
+- Verified up to 5 reviews
+ - Send a few emails to get people ready and give them a chance to do it organically
+
+- Distinct pricing for pros
+ - Custom pricing per client

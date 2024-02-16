@@ -1,0 +1,18 @@
+<!-- Heal.me widgets -->
+<script>window.healmePracticeId="15796"</script>
+<script src="https://healme-widget.web.app/healme_widget.umd.cjs"></script>
+<!--/ Heal.me widgets -->
+
+<div class="healme-booking-widget" data-class-name="button" data-button-copy="Book your free discovery call">Book your free discovery call</div>
+<div class="healme-booking-widget" data-class-name="button" data-button-copy="Book now">Book now</div>
+<div class="healme-services-list-widget" style="min-height: 500px;"></div>
+<div class="healme-reviews-widget"></div>
+<div class="healme-credentials-widget"></div>
+
+<a href="https://heal.me/?ref=powered-by-badge" title="Powered by Heal.me" target="_blank"><img src="https://heal.me/images/powered-by-healme.svg" alt="Powered by Heal.me" style="box-shadow: 0 4px 8px rgba(33 37 41 / 0.04);"></a>
+
+<script>
+  if(document.location.pathname == '/' && (window.innerWidth < 800)) {
+      document.querySelector('#page-zones__header .healme-booking-widget').style.display = 'none';
+    }
+</script>

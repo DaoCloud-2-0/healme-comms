@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Heal.me</title>
+
+    <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+    body, div, table {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    html, body {
+      background-color: #FFFFFF;
+    }
+    img {
+      max-width: 100%;
+      border: 0;
+      /* style alt text */
+      color: #ee7873;
+      font-size: 20px;
+    }
+    .logo {
+      margin: 0;
+    }
+    .inline {
+      display: inline;
+      vertical-align: top;
+    }
+    td { -webkit-text-size-adjust:none; -webkit-tap-highlight-color: rgba(0,0,0,0); margin: 0; padding: 0; border: 0; }
+    #ForceOutlook2010BrowserLink span { padding:0px; }
+    .content {
+      color: #0B3954;
+      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .content--left {
+      text-align: left;
+    }
+    .microcopy {
+      color: #55778A;
+      font-size: 13px;
+      line-height: 19.5px;
+    }
+    .small {
+      color: #55778A;
+      display: block;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .max-width {
+      max-width: 760px;
+    }
+    .max-width--contained {
+      max-width: 400px;
+    }
+
+    .h1 {
+      display: block;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+    .h2 {
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+
+    /* links */
+    a {
+      color: #0D9DA4;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    .subtle-link {
+      color: #171C21;
+      text-decoration: underline;
+    }
+    .footer-link {
+      color: #55778A;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+    b {
+      font-weight: 700;
+    }
+    .rounded {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .rounded-image {
+      border-radius: 100%;
+      overflow: hidden; 
+    }
+    .card {
+      background-color: #FFFFFF;
+      border: 1px solid #E4EFF6;
+      box-shadow: 0 8px 12px rgba(11, 57, 84, 0.08);
+    }
+
+    .banner {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .banner--blue {
+      background-color: #F7FAFC;
+      border: 1px solid #E4EFF6;
+    }
+    .banner--yellow {
+      background-color: #FEF8F0;
+    }
+
+    .verified-image {
+      display: inline;
+      vertical-align: bottom;
+    }
+
+    /*
+    Buttons
+    */
+    .button {
+      height: 44px;
+      width: 100%;
+      background-color: #0D9DA4;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .button a {
+      background-color: #0D9DA4;
+      color: #FFFFFF;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    /*
+    Buttons
+    */
+    .button--secondary {
+      height: 32px;
+      background-color: #FFFFFF;
+      border: 1px solid #C8D6DF;
+    }
+    .button--secondary a {
+      background-color: #FFFFFF;
+      color: #55778A;
+    }
+
+    @media screen and (max-width: 559px) {
+      .max-width {
+        max-width: 100% !important;
+      }
+      .max-width--contained {
+        max-width: 100% !important;
+      }
+      .height-for-small {
+        height: 24px !important;
+      }
+      .width-for-small {
+        width: 24px !important;
+      }
+      .shrink-for-small {
+        width: 20px !important;
+      }
+      .rounded {
+        border-radius: 0px !important;
+      }
+      .card {
+        border-radius: 20px !important;
+      }
+      .hide-for-small {
+        display: none !important;
+      }
+      .block-for-small {
+        display: block !important;
+        padding-left: 24px !important;
+      }
+      .height-8 {
+        height: 8px !important;
+      }
+      .full-small {
+        width: 100% !important;
+      }
+      /* iOS links */
+      a[href^=tel]{ color:#F00; text-decoration:none;}
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+    }
+    </style>
+    <!--[if mso]>
+    <style type="text/css">
+    .content {
+      font-family: Arial, sans-serif !important;
+      /* Default fallback font */
+    }
+    </style>
+    <![endif]-->
+  </head>
+  <body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" offset="0">
+
+    <!-- preview text -->
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+      🚨 We&rsquo;ve upgraded your Heal.me portal with a fresh coat of paint 🚨
+    </div>
+    <!--/ preview text -->
+
+    <table width="100%" cellpadding="0" cellspacing="0"><tr><td>
+
+      <!--[if (gte mso 9)|(IE)]><table width="560" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td width="750" align="center"><![endif]-->
+
+      <table class="max-width" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+        <tr>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+        </tr>
+        <tr>
+          <td width="60" class="shrink-for-small"></td>
+          <td>
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="content">
+                  <!-- header -->
+                  <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="left">
+                        <a href="https://heal.me/"><img src="https://healme-comms.netlify.app/images/logo--left.png" class="logo" height="40" /></a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!--/ header -->
+
+                  <!-- max-width content --><table class="max-width--contained" cellpadding="0" cellspacing="0"><tr><td class="content">
+                  
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+
+                    <span class="h1">{{ first_name }}, your Heal.me portal just got a HUGE upgrade!</span>
+
+                    {{ content }}
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- item 1 -->
+                    </td></tr></table><!--/ max-width content -->
+                    
+                    <img src="https://healme-comms.netlify.app/images/comms/customize-message.png" width="640" alt="How clients will see your custom messsages in their email" class="full-small" />
+
+                    <!-- max-width content --><table class="max-width--contained" cellpadding="0" cellspacing="0"><tr><td class="content">
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="8" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <div class="microcopy">This is just one of the many upgrades in your account!</div>
+                    
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    
+                    <span class="h2">Cleaner, simpler, better</span>
+                    
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="8" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    
+                    We spent the last month redesigning and rebuilding Heal.me for you and your needs. This isn’t done yet, but we’re already hearing great things about how it’s more intuitive and streamlined.
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- appt card -->
+                    <table class="rounded card box-shadow" width="100%" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="24" class="height-for-small"></td>
+                        <td height="24" class="height-for-small"></td>
+                        <td height="24" class="height-for-small"></td>
+                      </tr>
+                      <tr>
+                        <td width="24" class="width-for-small"></td>
+                        <td class="content content--left" align="left">
+                          “Just wanted to say, I love the upgrade to the Heal.me site. Booking my clients is so much more streamlined!”
+                        </td>
+                        <td width="24" class="width-for-small"></td>
+                      </tr>
+                      <tr>
+                        <td height="24" class="height-for-small"></td>
+                        <td height="24" class="height-for-small"></td>
+                        <td height="24" class="height-for-small"></td>
+                      </tr>
+                    </table>
+                    <!--\ appt card -->
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <a href="https://heal.me/portal/calendar">Check it out now »</a>
+
+                    <!--/ item 1 -->
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- item 2 -->
+                    </td></tr></table><!--/ max-width content -->
+
+                    <!-- max-width content --><table class="max-width--contained" cellpadding="0" cellspacing="0"><tr><td class="content">
+
+                    <img src="https://healme-comms.netlify.app/images/comms/stripe-8-15-23.png" width="400" alt="Stripe credit card transaction fees are changing from being paid by the client to being deducted from your payout. *This is not a Heal.me fee however.*" class="full-small" />
+                    
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    
+                    <span class="h2">Features you need</span>
+                    
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="8" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    
+                    The rebuild also allows us to more easily build the deep features you’ve been needing. We’re getting ready to work on things like:
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="8" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    &nbsp;&nbsp;&bull; Group bookings
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="4" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    &nbsp;&nbsp;&bull; Packages
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="4" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    &nbsp;&nbsp;&bull; Recurring booking
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="4" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    &nbsp;&nbsp;&bull; Video reviews
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <a href="##https://heal.me/portal/calendar">Want to give us feedback?</a>
+                    <!--/ item 2 -->
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- item 3 -->
+                    </td></tr></table><!--/ max-width content -->
+
+                    <!-- max-width content --><table class="max-width--contained" cellpadding="0" cellspacing="0"><tr><td class="content">
+
+                    <img src="https://healme-comms.netlify.app/images/comms/gcal-8-15-23.png" width="400" alt="Check out the latest bug fixes and updates to Google Calendar, our mobile apps, and much more!" class="full-small" />
+                    
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    
+                    <span class="h2">🐛 Bug fixes &amp; updates across Heal.me</span>
+                    
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="8" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    
+                    &nbsp;&nbsp;&bull; Calendar
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="4" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    &nbsp;&nbsp;&bull; Profile
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="4" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    &nbsp;&nbsp;&bull; Booking &amp; rescheduling
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="4" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    &nbsp;&nbsp;&bull; Payments &amp; refunds
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="4" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    &nbsp;&nbsp;&bull; Google Calendar integration
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="4" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    &nbsp;&nbsp;&bull; Updated <a href="https://play.google.com/store/apps/details?id=me.heal.mobile&hl=en_US&gl=US">Android</a> and <a href="https://apps.apple.com/us/app/heal-me-book-holistic-care/id1599744549">iOS</a> apps
+                    <!--/ item 3 -->
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    There&rsquo;s never been a better time to adopt the Heal.me booking platform for all of your appointments. <div class="hide-for-small"></div> <a href="https://heal.me/portal/calendar">Log into my account now »</a>
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    Want to learn more about the full power of Heal.me? Book a free call with our customer success team and we’d be happy to help.
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://calendly.com/healdotme-onboarding/newfeatures" style="height:48px;v-text-anchor:middle;width:320px;" arcsize="10%" strokecolor="#0D9DA4" fillcolor="#0D9DA4">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">Book a free catch-up call</center>
+                    </v:roundrect>
+                  <![endif]--><a href="https://calendly.com/healdotme-onboarding/newfeatures"
+                  style="background-color:#0D9DA4;border-radius:4px;color:#ffffff;display:inline-block;font-family:inherit;font-size:16px;font-weight:700;line-height:48px;text-align:center;text-decoration:none;width:100%;-webkit-text-size-adjust:none;mso-hide:all;">Book a free catch-up call</a>
+
+                  <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                  In good health,
+                  <br />
+                  Heal.me Team
+
+                  <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                  <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                  <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- footer -->
+                    <table width="100%" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td class="content small">
+                          &copy; 2023 Heal.me
+                          <br />
+                          411 W Monroe Street
+                          <br />
+                          Austin, TX 78704
+                          <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                          <a href="{{ unsubscribe_url }}" class="footer-link">Unsubscribe</a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--\ footer -->
+
+                  </td></tr></table>
+                  <!--/ max-width content -->
+
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td width="60" class="shrink-for-small"></td>
+        </tr>
+        <tr>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+        </tr>
+      </table>
+
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+    </td></tr></table>
+  </body>
+</html>

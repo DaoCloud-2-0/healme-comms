@@ -1,0 +1,20 @@
+## OS X
+.DS_Store
+
+## Jekyll
+/_site
+_site
+_site/*
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
+
+# Folders
+/vendor
+bbin/
+bin/
+coverage
+gh-pages/
+pkg/
+test/dest
+tmp/*

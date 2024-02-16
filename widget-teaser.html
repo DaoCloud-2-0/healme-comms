@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Heal.me</title>
+
+    <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400;1,8..60,700&display=swap');
+    body, div, table {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    html, body {
+      background-color: #FFFFFF;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      border: 0;
+      /* style alt text */
+      color: #0B3954;
+      font-size: 20px;
+    }
+    .logo {
+      margin: 0;
+    }
+    .inline {
+      display: inline;
+      vertical-align: top;
+    }
+    td { -webkit-text-size-adjust:none; -webkit-tap-highlight-color: rgba(0,0,0,0); margin: 0; padding: 0; border: 0; }
+    #ForceOutlook2010BrowserLink span { padding:0px; }
+    .content {
+      color: #0B3954;
+      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .serif {
+      font-family: 'Source Serif 4', serif;;
+    }
+    .content--xl {
+      font-size: 32px;
+      list-style: 40px;
+    }
+    .content--left {
+      text-align: left;
+    }
+    .small {
+      color: #55778A;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .microcopy {
+      color: #55778A;
+      font-size: 13px;
+      line-height: 19.5px;
+    }
+    .text--grey {
+      color: #55778A;
+    }
+    .text--orange {
+      color: #F4B965;
+    }
+    .text--blue {
+      color: #0D9DA4;
+    }
+    .small {
+      display: block;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .max-width {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 720px;
+    }
+    .max-width--contained {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 400px;
+    }
+    .faux-wide {
+      width: 400px;
+    }
+    .font--light {
+      font-weight: 400;
+    }
+
+    .break-for-large {
+      display: block;
+    }
+
+    .h1 {
+      display: block;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+    .h1--xl {
+      display: block;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .h2 {
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+
+    /* links */
+    a {
+      color: #0D9DA4;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    .subtle-link {
+      color: #0B3954;
+      text-decoration: underline;
+    }
+    .toc a {
+      color: #0B3954;
+      font-weight: 400;
+      text-decoration: none;
+    }
+    .footer-link {
+      color: #55778A;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+    b {
+      font-weight: 700;
+    }
+    .rounded {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .rounded-image {
+      border-radius: 100%;
+      overflow: hidden; 
+    }
+    .card {
+      background-color: #F5FAFD;
+      border: 1px solid #E4EFF6;
+    }
+
+    .banner {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .banner--blue {
+      background-color: #F7FAFC;
+      border: 1px solid #E4EFF6;
+    }
+    .banner--yellow {
+      background-color: #FEF8F0;
+    }
+    .app-banner {
+      background-color: #F7FAFC;
+      border-radius: 12px;
+    }
+    .bg--ultra-light-blue {
+      background-color: #F5FAFD;
+    }
+    .bg--light-green {
+      background-color: #E7FFE3;
+    }
+    .bg--light-orange {
+      background-color: #FEF8F0;
+    }
+    .bg--light-pink {
+      background-color: #FFE9FA;
+    }
+
+    .verified-image {
+      display: inline;
+      vertical-align: bottom;
+    }
+
+    .pill {
+      background-color: #FFFFFF;
+      border-radius: 12px;
+      border: 1px solid #C8D6DF;
+      color: #0B3954;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 40px;
+      margin: 2px;
+      text-decoration: none;
+      width: 18%;
+    }
+
+    /*
+    Buttons
+    */
+    .button {
+      background-color: #0D9DA4;
+      border-radius: 4px;
+      color: #FFFFFF;
+      display: inline-block;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+      text-decoration: none;
+      width: 400px;
+      -webkit-text-size-adjust: none;
+      mso-hide: all;
+    }
+
+    @media screen and (max-width: 559px) {
+      .content {
+        text-align: left !important;
+      }
+      .button {
+        width: 100% !important;
+      }
+      .max-width {
+        max-width: 100% !important;
+      }
+      .max-width--contained {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      .height-for-small {
+        height: 24px !important;
+      }
+      .width-for-small {
+        width: 24px !important;
+      }
+      .shrink-for-small {
+        width: 20px !important;
+      }
+      /*.rounded {
+        border-radius: 0px !important;
+      }*/
+      .app-banner {
+        border-radius: 0px !important;
+      }
+      .card {
+        border-radius: 12px !important;
+      }
+      .hide-for-small {
+        display: none !important;
+      }
+      .block-for-small {
+        display: block !important;
+        padding-left: 24px !important;
+      }
+      .height-8 {
+        height: 8px !important;
+      }
+      .full-small, .faux-wide {
+        width: 100% !important;
+      }
+      .break-for-large {
+        display: none !important;
+      }
+      .pill {
+        text-align: center !important;
+        width: 45% !important;
+      }
+      /* iOS links */
+      a[href^=tel]{ color:#F00; text-decoration:none;}
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+    }
+    </style>
+    <!--[if mso]>
+    <style type="text/css">
+    .content {
+      font-family: Arial, sans-serif !important;
+      /* Default fallback font */
+    }
+    </style>
+    <![endif]-->
+  </head>
+  <body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" offset="0">
+
+    <!-- preview text -->
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+      The latest from our world of holistic healing including My Healing Journey with Dance/Movement Therapy, the Featured Modality of Reiki, and more.
+    </div>
+    <!--/ preview text -->
+
+    <table width="100%" cellpadding="0" cellspacing="0"><tr><td>
+
+      <!--[if (gte mso 9)|(IE)]><table width="720" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td width="720" align="center"><![endif]-->
+
+      <table class="max-width" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+        <tr>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+        </tr>
+        <tr>
+          <td width="60" class="shrink-for-small"></td>
+          <td>
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="content" align="center">
+                  <!-- header -->
+                  <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="center">
+                        <a href="https://heal.me/"><img src="https://healme-comms.netlify.app/images/logo--left.png" class="logo" height="40" /></a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!--/ header -->
+                  
+                  <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                  <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                  <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                  <span class="h1">
+                    🆕
+                    <br />
+                    heal.me Booking Widget:
+                    <br class="break-for-large" />
+                    <span class="font--light">A few lines of code, lots of bookings.</span>
+                  </span>
+
+                  <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                  <img src="https://healme-comms.netlify.app/images/widget-image.jpg" width="600" class="rounded" />
+
+                  <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                  <!-- max-width content --><table class="max-width--contained" cellpadding="0" cellspacing="0"><tr><td class="content" align="center">
+
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="##https://demo-healme.netlify.app/" style="height:48px;v-text-anchor:middle;width:400px;" arcsize="10%" strokecolor="#0D9DA4" fillcolor="#0D9DA4">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">Try it out now</center>
+                    </v:roundrect>
+                    <![endif]--><a href="##https://demo-healme.netlify.app/" class="button">Try it out now</a>
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="8" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <span class="small">You’ll test it out on a demo website, feel free to book</span>
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <table><tr><td align="left" class="content">
+
+                      <span class="h2">We made this for your practice’s needs:</span>
+
+                      <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                      <!-- left-aligned cards -->
+                      <table width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="104" height="104" class="rounded content--xl bg--light-orange" align="center" valign="middle">✨</td>
+                          <td width="24"></td>
+                          <td class="content" align="left" valign="middle">
+                            <strong>Best the best you</strong>
+                            <br class="break-for-large" />
+                            <span class="text--grey">You’ve worked hard on your brand, now add the best booking experience to your website.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                        </tr>
+                        <tr>
+                          <td width="104" height="104" class="rounded content--xl bg--light-pink" align="center" valign="middle">🕤</td>
+                          <td width="24"></td>
+                          <td class="content" align="left" valign="middle">
+                            <strong>Save your clients time</strong>
+                            <br class="break-for-large" />
+                            <span class="text--grey">Designed to get bookings and rebookings done in as few taps/clicks as possible.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                        </tr>
+                        <tr>
+                          <td width="104" height="104" class="rounded content--xl bg--light-green" align="center" valign="middle">💰</td>
+                          <td width="24"></td>
+                          <td class="content" align="left" valign="middle">
+                            <strong>Save yourself time &amp; money</strong>
+                            <br class="break-for-large" />
+                            <span class="text--grey">All bookings go into heal.me + any calendars you’ve connected with no work from your end.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                        </tr>
+                        <tr>
+                          <td width="104" height="104" class="rounded content--xl bg--ultra-light-blue" align="center" valign="middle">😃</td>
+                          <td width="24"></td>
+                          <td class="content" align="left" valign="middle">
+                            <strong>We’ll help you set it up</strong>
+                            <br class="break-for-large" />
+                            <span class="text--grey">Our team would be happy to help you get this added to your website!</span>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--/ left-aligned cards -->
+
+                      <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                      <strong>Want to add to your website?</strong> Just reply back to this email and say “I want the Booking Widget!” and we’ll reach out to you to get started.
+
+                    </td></tr></table>
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="##https://demo-healme.netlify.app/" style="height:48px;v-text-anchor:middle;width:400px;" arcsize="10%" strokecolor="#0D9DA4" fillcolor="#0D9DA4">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">I want the Booking Widget!</center>
+                    </v:roundrect>
+                    <![endif]--><a href="##https://demo-healme.netlify.app/" class="button">I want the Booking Widget!</a>
+
+                    </td></tr></table><!--/ max-width content -->
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0" class="faux-wide"><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- footer -->
+                    <table width="100%" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td class="content small text--grey" align="center">
+                          &copy; 2023 Heal.me
+                          <br />
+                          411 W Monroe Street
+                          <br />
+                          Austin, TX 78704
+                          <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                          <a href="[unsubscribe]" class="footer-link">Unsubscribe</a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--\ footer -->
+
+                  </td></tr></table>
+                  <!--/ max-width content -->
+
+                </td>
+                <td width="60" class="shrink-for-small"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+        </tr>
+      </table>
+
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+    </td></tr></table>
+  </body>
+</html>

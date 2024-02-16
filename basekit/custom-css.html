@@ -1,0 +1,27 @@
+<style>
+body:not(.edit) #page-zones__header {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* for reviews widget */
+  border-bottom: 1px solid rgba(0 0 0 / 0.08);
+}
+/* prevent sticky from showing in editor mode */
+body:not(.edit) .row--header-11a .row__container [data-name="responsivecolumns"]:first-child {
+  margin: 30px auto;
+  max-width: 1300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  z-index: 4;
+}
+</style>
+<style>
+/* reviews widget */
+.healme-reviews-widget .healme-widget .font-serif, .healme-reviews-widget .healme-widget .font-serif a { font-family: 'Fraunces', serif !important; font-weight: bold !important }.healme-reviews-widget .healme-widget .font-serif a{text-decoration:underline!important} /* REPLACE TYPEFACE WITH BASEKIT SELECTION */
+</style>
+
+<style>/* reviews widget */
+.healme-reviews-widget .healme-widget .font-serif, .healme-reviews-widget .healme-widget .font-serif a { font-family: 'Fraunces', serif !important; font-weight: bold !important }.healme-reviews-widget .healme-widget .font-serif a{text-decoration:underline!important} /* REPLACE TYPEFACE WITH BASEKIT SELECTION */
+.healme-credentials-widget .healme-widget .justify-center{justify-content:left !important;}.healme-widget .gap-4{gap: 12px!important;}.healme-widget .shadow-md{box-shadow: 0 4px 8px rgba(0,0,0,0.04)!important}.healme-credentials-widget .healme-widget .flex{font-size: 16px!important}</style>

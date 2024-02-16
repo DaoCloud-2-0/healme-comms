@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html><head>
+  <meta>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Heal.me</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+    body, div, table {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      
+      box-sizing: border-box;
+    }
+    html, body {
+      background-color: #FFFFFF;
+    }
+    img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      border: 0;
+      /* style alt text */
+      color: #ee7873;
+      font-size: 20px;
+      text-align: center;
+    }
+    .logo {
+      margin: auto;
+    }
+    .inline {
+      display: inline;
+      vertical-align: top;
+    }
+    td { -webkit-text-size-adjust:none; -webkit-tap-highlight-color: rgba(0,0,0,0); margin: 0; padding: 0; border: 0; }
+    #ForceOutlook2010BrowserLink span { padding:0px; }
+    .content {
+      color: #0B3954;
+      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+    }
+    .content--left {
+      text-align: left;
+    }
+    .microcopy {
+      color: #55778A;
+      font-size: 13px;
+    }
+    .small {
+      color: #55778A;
+      display: block;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .max-width {
+      margin:  auto;
+      max-width: 560px;
+    }
+    .max-width--contained {
+      margin:  auto;
+      max-width: 320px;
+    }
+
+    .h1 {
+      display: block;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+    .h2 {
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+
+    /* links */
+    a {
+      color: #0D9DA4;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    a.unsubscribe {
+      font-size: 13px;
+      font-weight: 400;
+      color: inherit;
+      text-decoration: underline;
+    }
+    .subtle-link {
+      color: #171C21;
+      text-decoration: underline;
+    }
+    .footer-link {
+      color: #55778A;
+      font-weight: 400;
+    }
+    b {
+      font-weight: 700;
+    }
+    .rounded {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .rounded-image {
+      border-radius: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+    .card {
+      background-color: #FFFFFF;
+      border: 1px solid #E4EFF6;
+      width: 400px; /* for width for less content on larger screens */
+    }
+
+    .email-link, .email-link a {
+      color: #0B3954 !important;
+      font-weight: 400 !important;
+      text-decoration: none !important;
+    }
+
+    .box-shadow {
+      box-shadow: 0 8px 12px rgba(11, 57, 84, 0.08);
+    }
+
+    .banner {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .banner--blue {
+      background-color: #F7FAFC;
+      border: 1px solid #E4EFF6;
+    }
+    .banner--yellow {
+      background-color: #FEF8F0;
+    }
+    .app-banner {
+      background-color: #F7FAFC;
+      border-radius: 12px;
+    }
+
+    .verified-image {
+      display: inline;
+      vertical-align: bottom;
+    }
+
+    .border-bottom {
+      border-bottom: 1px solid #E4EFF6;
+    }
+
+    /*
+    Buttons
+    */
+    .button {
+      background-color: #0D9DA4;
+      border-radius: 4px;
+      color: #FFFFFF;
+      display: inline-block;
+      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 44px;
+      text-align: center;
+      text-decoration: none;
+      width: 320px;
+      -webkit-text-size-adjust: none;
+      
+    }
+    .button--secondary {
+      background-color: #FFFFFF;
+      border: 1px solid #C8D6DF;
+      color: #55778A;
+      line-height: 32px;
+    }
+
+    @media screen and (max-width: 559px) {
+      .max-width, .button {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      .card {
+        width: 100% !important;
+      }
+      .max-width--contained {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      .height-for-small {
+        height: 24px !important;
+      }
+      .width-for-small {
+        width: 24px !important;
+      }
+      .shrink-for-small {
+        width: 24px !important;
+      }
+      .rounded, .app-banner {
+        border-radius: 0px !important;
+      }
+      .card {
+        border-radius: 20px !important;
+      }
+      .hide-for-small {
+        display: none !important;
+      }
+      .block-for-small {
+        display: block !important;
+        padding-left: 24px !important;
+      }
+      .height-8 {
+        height: 8px !important;
+      }
+      /* iOS links */
+      a[href^=tel]{ color:#F00; text-decoration:none;}
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+    }
+  </style>
+  <!--[if mso]>
+  <style type="text/css">
+    .content {
+      font-family: Arial, sans-serif !important;
+      /* Default fallback font */
+    }
+  </style>
+  <![endif]-->
+  </head>
+  <body>
+
+    <!-- preview text -->
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+      {insert hidden preheader text here}
+    </div>
+    <!--/ preview text -->
+
+    <table width="100%" cellpadding="0" cellspacing="0"><tbody><tr><td>
+
+      <!--[if (gte mso 9)|(IE)]><table width="560" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td width="750" align="center"><![endif]-->
+
+      <table class="max-width" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+        <tbody><tr>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+        </tr>
+        <tr>
+          <td width="60" class="shrink-for-small"></td>
+          <td>
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td class="content">
+                  <!-- header -->
+                  <table width="100%" cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                      <td align="center">
+                        <a href="##"><img src="https://healme-comms.netlify.app/images/logo--center.png" class="logo" height="40"></a>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                  <!--/ header -->
+
+                  <table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></tbody></table>
+                  <table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></tbody></table>
+                  <table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></tbody></table>
+
+                  <!-- max-width content -->
+                  <table class="max-width--contained" cellpadding="0" cellspacing="0"><tbody><tr><td class="content">
+
+                    <span class="h1">Let’s get your profile <div class="hide-for-small"></div> set up now {{ first_name }}</span>
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></tbody></table>
+
+                    This takes about 10-15 minutes, and we’ll auto-save your progress along the way.
+
+                    {{ content }}
+
+                  </td></tr></tbody></table>
+                  <!--/ max-width content -->
+
+                  <!-- appt card -->
+                  <table class="rounded card box-shadow" width="100%" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                      <td height="32" class="height-for-small"></td>
+                      <td height="32" class="height-for-small"></td>
+                      <td height="32" class="height-for-small"></td>
+                    </tr>
+                    <tr>
+                      <td width="32" class="width-for-small"></td>
+                      <td class="content content--left" align="left">
+                        <!-- faux profile card -->
+                        <table width="100%" cellspacing="0" cellpadding="0">
+                          <tbody><tr>
+                            <td width="80"><img src="https://healme-comms.netlify.app/images/default-avatar.png" height="80" width="80" class="rounded-image"></td>
+                            <td width="16"></td>
+                            <td class="content content--left" align="left">
+                              <span class="h2">{{ first_name }} {{ last_name }}</span>
+                              <span class="email-link">{{ email }}</span>
+                            </td>
+                          </tr>
+                        </tbody></table>
+                        <!--/ faux profile card -->
+                        <table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></tbody></table>
+                        <img src="https://healme-comms.netlify.app/images/holder.png" width="100%">
+                        <table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></tbody></table>
+                        <img src="https://healme-comms.netlify.app/images/holder.png" width="120" height="24" class="inline">
+                        &nbsp;&nbsp;&nbsp;
+                        <img src="https://healme-comms.netlify.app/images/holder.png" width="48" height="24" class="inline">                        
+                      </td>
+                      <td width="32" class="width-for-small"></td>
+                    </tr>
+                    <tr>
+                      <td height="32" class="height-for-small"></td>
+                      <td height="32" class="height-for-small"></td>
+                      <td height="32" class="height-for-small"></td>
+                    </tr>
+                  </tbody></table>
+                  <!--\ appt card -->
+
+                  <table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></tbody></table>
+
+                  <!--[if mso]>
+                  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://heal.me/portal/profile" style="height:48px;v-text-anchor:middle;width:400px;" arcsize="10%" strokecolor="#0D9DA4" fillcolor="#0D9DA4">
+                    <w:anchorlock/>
+                    <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">Setup profile now »</center>
+                  </v:roundrect>
+                  <![endif]--><a href="https://heal.me/portal/profile" class="button">Setup profile now »</a>
+
+                  <table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></tbody></table>
+
+                  <b>Anything we can help with?</b> <div class="hide-for-small"></div> Simply reply and we'll get you sorted.
+                  
+
+                  <table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></tbody></table>
+                  <table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></tbody></table>
+                  <table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></tbody></table>
+
+                  <!-- footer -->
+                  <table width="100%" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                      <td class="content small">
+                        © 2023 Heal.me
+                        <br>
+                        411 W Monroe Street
+                        <br>
+                        Austin, TX 78704
+                        <table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></tbody></table>
+                        <a href="{{ unsubscribe_url }}" class="footer-link">Unsubscribe</a>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                  <!--\ footer -->
+
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+          <td width="60" class="shrink-for-small"></td>
+        </tr>
+        <tr>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+        </tr>
+      </tbody></table>
+
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+    </td></tr></tbody></table>
+  
+</body></html>

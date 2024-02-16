@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+html,body {
+  background: green;
+  min-height: 2000px;
+}
+.header {
+  background-color: yellow;
+  height: 72px;
+}
+.hero {
+  background-color: red;
+  padding: 160px 0 48px;
+}
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: ;
+}
+.hero-content {
+  background-color: blue;
+  height: 300px;
+}
+@media screen and (min-height: 600px) {
+  .hero {
+      padding: 120px 0;
+  }
+}
+@media screen and (min-height: 800px) {
+  .hero {
+      padding: 200px 0;
+  }
+}
+/*@media screen and (min-height: 600px) and (min-width: 800px) {
+  .hero {
+      max-height: 85vh;
+  }
+}*/
+  </style>
+</head>
+<body>
+
+  <div class="header"></div>
+  <div class="hero">
+    <div class="hero-container">
+      <div class="hero-content"></div>
+    </div>
+  </div>
+  
+</body>
+</html>

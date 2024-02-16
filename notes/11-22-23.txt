@@ -1,0 +1,9 @@
+- CC required or not
+- Venmo/Zelle
+- Class is a set time, for X people
+- Expire after X time
+- Refund/cancellation policy
+- Document at the session-level
+ - No show
+ - Late show
+ - Etc.

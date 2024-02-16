@@ -1,0 +1,669 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Heal.me</title>
+
+    <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400;1,8..60,700&display=swap');
+    body, div, table {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    html, body {
+      background-color: #FFFFFF;
+    }
+    img {
+      max-width: 100%;
+      border: 0;
+      /* style alt text */
+      color: #0B3954;
+      font-size: 20px;
+    }
+    .logo {
+      margin: 0;
+    }
+    .inline {
+      display: inline;
+      vertical-align: top;
+    }
+    td { -webkit-text-size-adjust:none; -webkit-tap-highlight-color: rgba(0,0,0,0); margin: 0; padding: 0; border: 0; }
+    #ForceOutlook2010BrowserLink span { padding:0px; }
+    .content {
+      color: #0B3954;
+      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .serif {
+      font-family: 'Source Serif 4', serif;;
+    }
+    .content--xl {
+      font-size: 24px;
+      list-style: 40px;
+    }
+    .content--left {
+      text-align: left;
+    }
+    .microcopy {
+      color: #55778A;
+      font-size: 13px;
+      line-height: 19.5px;
+    }
+    .text--grey {
+      color: #55778A;
+    }
+    .text--orange {
+      color: #F4B965;
+    }
+    .text--blue {
+      color: #0D9DA4;
+    }
+    .small {
+      display: block;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .max-width {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 720px;
+    }
+    .max-width--contained {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 400px;
+    }
+    .faux-wide {
+      width: 400px;
+    }
+
+    .break-for-large {
+      display: block;
+    }
+
+    .h1 {
+      display: block;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+    .h1--xl {
+      display: block;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .h2 {
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+
+    /* links */
+    a {
+      color: #0D9DA4;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    .subtle-link {
+      color: #0B3954;
+      text-decoration: underline;
+    }
+    .toc a {
+      color: #0B3954;
+      font-weight: 400;
+      text-decoration: none;
+    }
+    .footer-link {
+      color: #55778A;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+    b {
+      font-weight: 700;
+    }
+    .rounded {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .rounded-image {
+      border-radius: 100%;
+      overflow: hidden; 
+    }
+    .rounded-image--12px {
+      border-radius: 12px;
+    }
+    .card {
+      background-color: #F5FAFD;
+      border: 1px solid #E4EFF6;
+    }
+
+    .banner {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .banner--blue {
+      background-color: #F7FAFC;
+      border: 1px solid #E4EFF6;
+    }
+    .banner--yellow {
+      background-color: #FEF8F0;
+    }
+    .app-banner {
+      background-color: #F7FAFC;
+      border-radius: 12px;
+    }
+    .bg--ultra-light-blue {
+      background-color: #F5FAFD;
+    }
+    .bg--light-green {
+      background-color: #E7FFE3;
+    }
+    .bg--light-orange {
+      background-color: #FEF8F0;
+    }
+    .bg--light-pink {
+      background-color: #FFE9FA;
+    }
+
+    .verified-image {
+      display: inline;
+      vertical-align: bottom;
+    }
+
+    .pill {
+      background-color: #FFFFFF;
+      border-radius: 12px;
+      border: 1px solid #C8D6DF;
+      color: #0B3954;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 40px;
+      margin: 2px;
+      text-decoration: none;
+      width: 18%;
+    }
+
+    /*
+    Buttons
+    */
+    .button {
+      background-color: #0D9DA4;
+      border-radius: 4px;
+      color: #FFFFFF;
+      display: inline-block;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+      text-decoration: none;
+      width: 100%;
+      -webkit-text-size-adjust: none;
+      mso-hide: all;
+    }
+
+    .hide-for-large {
+      display: none;
+      max-height: 0px;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 559px) {
+      .content {
+        text-align: left !important;
+      }
+      .max-width {
+        max-width: 100% !important;
+      }
+      .max-width--contained {
+        max-width: 100% !important;
+      }
+      .height-for-small {
+        height: 24px !important;
+      }
+      .width-for-small {
+        width: 24px !important;
+      }
+      .shrink-for-small {
+        width: 20px !important;
+      }
+      /*.rounded {
+        border-radius: 0px !important;
+      }*/
+      .app-banner {
+        border-radius: 0px !important;
+      }
+      .card {
+        border-radius: 12px !important;
+      }
+      .hide-for-small {
+        display: none !important;
+      }
+      .block-for-small {
+        display: block !important;
+        padding-left: 24px !important;
+      }
+      .height-8 {
+        height: 8px !important;
+      }
+      .full-small, .faux-wide {
+        width: 100% !important;
+      }
+      .break-for-large {
+        display: none !important;
+      }
+      .pill {
+        text-align: center !important;
+        width: 45% !important;
+      }
+      /* iOS links */
+      a[href^=tel]{ color:#F00; text-decoration:none;}
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+      .hide-for-large {
+        display: block !important;
+        max-height: 100% !important;
+        overflow: auto !important;
+      }
+    }
+    </style>
+    <!--[if mso]>
+    <style type="text/css">
+    .content {
+      font-family: Arial, sans-serif !important;
+      /* Default fallback font */
+    }
+    </style>
+    <![endif]-->
+  </head>
+  <body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" offset="0">
+
+    <!-- preview text -->
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+      The latest from our world of holistic healing including How I Healed Lifelong Trauma with Yoga, the Featured Modality of Acupuncture, and more.
+    </div>
+    <!--/ preview text -->
+
+    <table width="100%" cellpadding="0" cellspacing="0"><tr><td>
+
+      <!--[if (gte mso 9)|(IE)]><table width="720" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td width="720" align="center"><![endif]-->
+
+      <table class="max-width" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+        <tr>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+        </tr>
+        <tr>
+          <td width="60" class="shrink-for-small"></td>
+          <td>
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="content" align="center">
+                  <!-- header -->
+                  <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="center">
+                        <a href="https://heal.me/"><img src="https://healme-comms.netlify.app/images/logo--gradient.png" class="logo" height="56" /></a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!--/ header -->
+
+                  <!-- max-width content --><table class="max-width--contained" cellpadding="0" cellspacing="0"><tr><td class="content" align="center">
+                  
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <div class="hide-for-large">
+                      <span class="h1">
+                        What’s inside:
+                      </span>
+
+                      <!-- The latest edition of our <a href="https://heal.me/" style="text-decoration: none; color: #0B3954; font-weight: 400;">heal.me</a> newsletter is here! Featuring insights to support your healing journey. Here’s what’s inside: -->
+
+                      <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    </div>
+
+                    <div class="toc">
+                      <a href="#story1"><b>1:</b> How Integrative Health Healed My Kidney</a>
+                      <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="8" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                      <a href="#story2"><b>2:</b> How I Healed Lifelong Trauma with Yoga Therapy</a>
+                      <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="8" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                      <a href="#story3"><b>3:</b> From Hashimoto’s Disease Despair to Holistic Hope</a>
+                      <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="8" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                      <a href="#story4"><b>4:</b> Featured Modality: Acupuncture</a>
+                    </div>
+
+                    </td></tr></table><!--/ max-width content -->
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0" class="faux-wide"><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- item 1 -->
+                    <span id="story1" class="h2">How Integrative Health Healed My Kidney</span>
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <img src="https://healme-comms.netlify.app/images/comms/consumer/10-2023/integrative-health.jpg" width="600" />
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- max-width content --><table class="max-width--contained" cellpadding="0" cellspacing="0"><tr><td class="content" align="center">
+
+                    In April 2018, everything changed for me. I felt good and in shape, but after a few energy healing sessions, my kidneys raised concerns. Surprisingly, the emotion of fear seemed to affect their function. Initially, I attributed these signals to the recent stress of being robbed twice. Yet I learned that my health issues were more rooted in past traumas than I ever realized.
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://heal.me/articles/how-integrative-health-healed-my-kidney" style="height:48px;v-text-anchor:middle;width:400px;" arcsize="10%" strokecolor="#0D9DA4" fillcolor="#0D9DA4">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">Read Shelley’s story</center>
+                    </v:roundrect>
+                    <![endif]--><a href="https://heal.me/articles/how-integrative-health-healed-my-kidney" class="button">Read Shelley’s story</a>
+
+                    </td></tr></table><!--/ max-width content -->
+                    <!--/ item 1 -->
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="64" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- card // booking nudge -->
+                    <table class="rounded card" width="100%" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="40" class="height-for-small"></td>
+                        <td height="40" class="height-for-small"></td>
+                        <td height="40" class="height-for-small"></td>
+                      </tr>
+                      <tr>
+                        <td width="24" class="width-for-small"></td>
+                        <td class="content" align="center">
+                          <span class="h2">Are you <i class="serif text--blue">feeling</i> any of these today?</span>
+                          <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="4" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                          <span class="text--grey">Click any to find a practitioner near you now.</span>
+                          <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                          <!-- pills -->
+                          <a href="https://heal.me/practitioner-search?query=Anxiety" class="pill">Anxiety</a>
+                          <a href="https://heal.me/practitioner-search?query=Depression" class="pill">Depression</a>
+                          <a href="https://heal.me/practitioner-search?query=Brain%20Fog" class="pill">Brain Fog</a>
+                          <a href="https://heal.me/practitioner-search?query=Chronic%20Pain" class="pill">Pain</a>
+                          <a href="https://heal.me/practitioner-search?query=Stress" class="pill">Stress</a>
+                          <!-- /pills -->
+                        </td>
+                        <td width="24" class="width-for-small"></td>
+                      </tr>
+                      <tr>
+                        <td height="40" class="height-for-small"></td>
+                        <td height="40" class="height-for-small"></td>
+                        <td height="40" class="height-for-small"></td>
+                      </tr>
+                    </table>
+                    <!--/ card // booking nudge -->
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="64" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- item 2 -->
+                    <span id="story2" class="h2">How I Healed Lifelong Trauma with <br class="hide-for-small" /> Phoenix Rising Yoga Therapy</span>
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <img src="https://healme-comms.netlify.app/images/comms/consumer/10-2023/phoenix-rising.jpg" width="600" />
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- max-width content --><table class="max-width--contained" cellpadding="0" cellspacing="0"><tr><td class="content" align="center">
+
+                    I was only three years old when life threw its first curveball at me: Lisa, my sister, died of cancer. Yearning for healing, I turned to conventional medicine. But instead of understanding, I felt alone in a cold, clinical approach. It seemed they sought to 'fix' me rather than 'heal' me. Just when despair threatened to overwhelm, I found hope in Phoenix Yoga Rising Therapy.
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://heal.me/articles/how-i-healed-lifelong-trauma-with-phoenix-rising-yoga" style="height:48px;v-text-anchor:middle;width:400px;" arcsize="10%" strokecolor="#0D9DA4" fillcolor="#0D9DA4">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">Read Jennifer’s story</center>
+                    </v:roundrect>
+                    <![endif]--><a href="https://heal.me/articles/how-i-healed-lifelong-trauma-with-phoenix-rising-yoga" class="button">Read Jennifer’s story</a>
+
+                    </td></tr></table><!--/ max-width content -->
+                    <!--/ item 2 -->
+
+                    <!-- item 3 -->
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0" class="faux-wide"><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <span id="story3" class="h2">From Hashimoto’s Disease Despair to Holistic Hope <br class="hide-for-small" /> My Journey Beyond Traditional Medicine</span>
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <img src="https://healme-comms.netlify.app/images/comms/consumer/10-2023/holistic-hope.jpg" width="600" />
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- max-width content --><table class="max-width--contained" cellpadding="0" cellspacing="0"><tr><td class="content" align="center">
+
+                    Diagnosed Hashimoto’s Thyroiditis when I was eight, my life was marked with fatigue, anxiety, and uncertainty. Relying on traditional medical advice, I was given Synthroid, a synthetic supplement. It promised relief but required frequent blood tests to adjust doses. While this conventional approach offered a solution, its limitations were glaringly evident when many of my symptoms persisted.
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://heal.me/articles/from-hashimoto-s-disease-despair-to-holistic-hope-my-journey-beyond-traditional-medicine" style="height:48px;v-text-anchor:middle;width:400px;" arcsize="10%" strokecolor="#0D9DA4" fillcolor="#0D9DA4">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">Read Adam’s story</center>
+                    </v:roundrect>
+                    <![endif]--><a href="https://heal.me/articles/from-hashimoto-s-disease-despair-to-holistic-hope-my-journey-beyond-traditional-medicine" class="button">Read Adam’s story</a>
+
+                    </td></tr></table><!--/ max-width content -->
+                    <!--/ item 3 -->
+
+                    <!-- item 4 -->
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0" class="faux-wide"><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <span id="story4" class="h2">Featured Modality: Acupuncture</span>
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <img src="https://healme-comms.netlify.app/images/comms/consumer/10-2023/acupuncture.jpg" width="600" />
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- max-width content --><table class="max-width--contained" cellpadding="0" cellspacing="0"><tr><td class="content" align="center">
+
+                    Curious about what acupuncture can do for your health? Let’s embark on an enlightening journey! Dive into “<a href="https://heal.me/articles/acupuncture">Acupuncture - Definition, Benefits, Treatment</a>” to understand its unique approach, its wide-ranging benefits, and its place in today's medical landscape.
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://heal.me/articles/acupuncture" style="height:48px;v-text-anchor:middle;width:400px;" arcsize="10%" strokecolor="#0D9DA4" fillcolor="#0D9DA4">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">Learn more about Acupuncture</center>
+                    </v:roundrect>
+                    <![endif]--><a href="https://heal.me/articles/acupuncture" class="button">Learn more about Acupuncture</a>
+
+                    </td></tr></table><!--/ max-width content -->
+                    <!--/ item 4 -->
+
+                    <!-- Why Heal.me? -->
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0" class="faux-wide"><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- max-width content --><table class="max-width--contained" cellpadding="0" cellspacing="0"><tr><td class="content" align="left">
+
+                      <span id="story5" class="h2">Why book practitioners on <a href="https://heal.me/" style="text-decoration: none; color: #0B3954;">heal.me</a>?</span>
+
+                      <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                      <!-- left-aligned cards -->
+                      <table width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="80" height="80" class="rounded content--xl bg--ultra-light-blue" align="center" valign="middle">😌</td>
+                          <td width="24"></td>
+                          <td class="content" align="left" valign="middle">
+                            Largest network of certified holistic practitioners.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                        </tr>
+                        <tr>
+                          <td width="80" height="80" class="rounded content--xl bg--light-green" align="center" valign="middle">🔍</td>
+                          <td width="24"></td>
+                          <td class="content" align="left" valign="middle">
+                            Simple and convenient booking process.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                        </tr>
+                        <tr>
+                          <td width="80" height="80" class="rounded content--xl bg--light-pink" align="center" valign="middle">🏅</td>
+                          <td width="24"></td>
+                          <td class="content" align="left" valign="middle">
+                            Reviews are sourced from real, verified users.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                        </tr>
+                        <tr>
+                          <td width="80" height="80" class="rounded content--xl bg--light-orange" align="center" valign="middle">✅</td>
+                          <td width="24"></td>
+                          <td class="content" align="left" valign="middle">
+                            We confirm and validate each practitioner's credentials.
+                          </td>
+                        </tr>
+                      </table>
+                      <!--/ left-aligned cards -->
+
+                      <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                      <!--[if mso]>
+                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://heal.me/" style="height:48px;v-text-anchor:middle;width:400px;" arcsize="10%" strokecolor="#0D9DA4" fillcolor="#0D9DA4">
+                        <w:anchorlock/>
+                        <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">Find a Practitioner</center>
+                      </v:roundrect>
+                      <![endif]--><a href="https://heal.me/" class="button">Find a Practitioner</a>
+
+                      <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="24" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                      Are you a holistic practitioner? <br class="hide-for-small">Go to <a href="https://heal.me/?ref=consumer-newsletter-footer">www.heal.me</a> and apply to list your practice</a>
+
+                  </td></tr></table><!--/ max-width content -->
+                  <!--/ Why Heal.me? -->
+
+                  <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                  <table width="100%" cellspacing="0" cellpadding="0" class="faux-wide"><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                  <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                  <!-- max-width content --><table class="max-width--contained" cellpadding="0" cellspacing="0"><tr><td class="content" align="left">
+
+                    Thank you for being a cherished part of our <a href="https://heal.me/" style="text-decoration: none; color: #0B3954; font-weight: 400;">heal.me</a> community. Here's to celebrating wellness, embracing authenticity, and sharing this transformative journey. Thrilled to have you with us!
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    Sending love and light,
+                    <br />
+                    Your friends at <a href="https://heal.me/" style="text-decoration: none; color: #0B3954; font-weight: 400;">heal.me</a>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <img src="https://healme-comms.netlify.app/images/logo--words.png" alt="Heal.me logo" height="24" />
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="32" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- app banner -->
+                    <table class="app-banner" width="100%" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                          <td height="16"></td>
+                        </tr>
+                        <tr>
+                          <td width="32" class="width-for-small"></td>
+                          <td class="content" align="center">
+                            <b>Get our free mobile app</b>
+                            <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="8" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                            <a href="https://apps.apple.com/us/app/heal-me-book-holistic-care/id1599744549"><img src="https://heal.me/images/email/app-store.png" alt="Heal.me on the App Store" height="40"></a>
+                            <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="12" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                            <a href="https://play.google.com/store/apps/details?id=me.heal.mobile&hl=en_US&gl=US&pli=1"><img src="https://heal.me/images/email/google-play-store.png" alt="Heal.me on the Google Play Store" height="40"></a>
+                          </td>
+                          <td width="32" class="width-for-small"></td>
+                        </tr>
+                        <tr>
+                          <td height="20"></td>
+                          <td height="20"></td>
+                          <td height="20"></td>
+                        </tr>
+                      </table>
+                    <!--/ app banner -->
+
+                    </td></tr></table><!--/ max-width content -->
+
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0" class="faux-wide"><tr><td height="1" style="background-color: #E4EFF6; font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                    <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+
+                    <!-- footer -->
+                    <table width="100%" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td class="content small text--grey" align="center">
+                          &copy; 2023 Heal.me
+                          <br />
+                          411 W Monroe Street
+                          <br />
+                          Austin, TX 78704
+                          <table width="100%" cellspacing="0" cellpadding="0"><tr><td height="16" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr></table>
+                          <a href="[unsubscribe]" class="footer-link">Unsubscribe</a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--\ footer -->
+
+                  </td></tr></table>
+                  <!--/ max-width content -->
+
+                </td>
+                <td width="60" class="shrink-for-small"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+          <td height="32" class="height-for-small"></td>
+        </tr>
+      </table>
+
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+    </td></tr></table>
+  </body>
+</html>

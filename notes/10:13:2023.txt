@@ -1,0 +1,30 @@
+- Get ideal profile done asap
+- Signup > handoff to Onboarding
+- Get existing clients invited for reviews asap
+
+Data:
+- What is the current median time to starting a profile now?
+- What is the current median time to completing a profile now?
+- power pros that drive most bookings to become our ICP
+
+- Portal refresh + Onboarding (4 weeks)
+- Widget work: Services + booking polish (2 weeks)
+- Website work
+
+- Profile complete, now what?
+
+Prototype flows:
+- Define the flows of what we want to show for any designs going forward
+
+Portal refresh UAT/QA
+- Calendar
+- Clients
+- Profile
+- https://heal-me-web-feature-pro-icj7bd.herokuapp.com/
+
+
+Basekit
+- Widget CSS customizations: http://recordit.co/DMtt1K6Uha
+ - Change to iFrame or !important declarations for everything
+- Mobile adaption?
+- Update doc on how to build out a site (theme, module, content + imagery, site-wide scripts/CSS, site-wide local SEO settings)

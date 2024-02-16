@@ -1,0 +1,138 @@
+/* logo */
+.branding__logo-image {
+  max-height: 80px !important;
+}
+.branding__link:active {
+  opacity: 0.64 !important;
+}
+/* mobile tweaks */
+@media screen and (max-width: 799px) {
+  /* left-align content */
+  .contentgroup--center,
+  *[style*="text-align: center"] {
+    text-align: left !important;
+  }
+  /* hide line breaks */
+  .widget__contentgroup br,
+  .contentgroup__content br {
+    display: none !important;
+  }
+  h1, h2, h3, h4, h5, *[class*="wysiwyg-font-size"] {
+    line-height: 1.25 !important;
+  }
+  .healme-booking-widget .button, .button {
+    width: 100% !important;
+  }
+}
+
+/* overwrite button styles */
+.button, #page-zones__header .button {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+.button:active {
+  box-shadow: none !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+.button:focus {
+  box-shadow: 0 0 0 3px #8FD5FC !important;
+  transition: none !important;
+}
+.button:active::before {
+  background: rgba(0, 0, 0, 0.24) !important;
+  content: "";
+  display: block !important;
+  height: 100% !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  transition: none !important;
+}
+
+/* text button */
+.arrow-btn {
+    display: inline-block !important;
+    font-weight: 700 !important;
+    position: relative !important;
+    text-decoration: underline !important;
+}
+.arrow-btn svg {
+    display: inline-block !important;
+    margin-left: 4px !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    transition: margin-left 0.16s ease-in-out !important;
+    width: auto !important;
+}
+.arrow-btn path {
+    fill: currentColor !important;
+}
+.arrow-btn:hover {
+    text-decoration: none !important;
+}
+.arrow-btn:hover svg {
+    margin-left: 12px !important;
+}
+
+#page-zones__header .navigation-item a, .embed-content button {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+#page-zones__header .navigation-item a:hover {
+  text-decoration: underline !important;
+}
+#page-zones__header .navigation-item a:active {
+  opacity: 0.64 !important;
+}
+.navigation-item.selected {
+  font-weight: 400 !important;
+  opacity: 0.4 !important;
+}
+#page-zones__header .navigation-item.selected a {
+  cursor: default !important;
+  font-weight: 400 !important;
+  text-decoration: underline !important;
+}
+
+/* booking widget */
+:root {
+  --healme-widget-color-primary: 221 1 133 !important;
+  --healme-widget-border-radius: 8px !important;
+}
+.healme-widget * {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  -webkit-font-smoothing: auto !important;
+  -moz-font-smoothing: auto !important
+  font-smoothing: auto !important;
+}
+.healme-widget .sticky {
+  z-index: 10 !important;
+}
+.healme-widget input.mt-\[3px\] {
+  margin-top: 0 !important;
+}
+.healme-widget input[type="radio"] {
+  border: 1px solid currentColor !important;
+}
+h1 + h1, h2 + h2, h3 + h3, h4 + h4, h5 + h5, h2 + h1, h2 + h3 {
+  margin-top: 0 !important;
+}
+.mouse-copy {
+  display: block !important;
+}
+/* reviews widget */
+.healme-reviews-widget .healme-widget .text-2xl { font-size: 32px !important; }
+@media screen and (max-width: 799px) {
+    .healme-reviews-widget .healme-widget .text-2xl { font-size: 24px !important; }
+}
+.healme-credentials-widget .healme-widget .justify-center{justify-content:left !important;}
+.healme-credentials-widget .healme-widget .gap-4{gap: 12px!important;}
+.healme-credentials-widget .healme-widget .shadow-md{box-shadow: 0 4px 8px rgba(0,0,0,0.04)!important}
+.healme-credentials-widget .healme-widget .flex{font-size: 16px!important}

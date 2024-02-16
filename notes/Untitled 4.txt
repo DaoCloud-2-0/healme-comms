@@ -1,0 +1,35 @@
+The goal of the website is get more bookings for your services. To do this, it should answer the questions:
+
+- What is this/Am I in the right place?
+- What does this person do?
+- Can I trust them?
+- Does this seem like what I need?
+- Can I find time that works for me?
+
+- What do you offer service-wise?
+ - Duration-based VS service-based, except for Mentorship
+- Ideal client: Experienced depth of trauma, they are ready to move forward and find help
+ - Lot of artists, spiritual/magical-feeling folks
+ - Akashik records (?)
+- What would you like to change visually?
+ - Colors, type, imagery, buttons
+- Fill out the Google Doc for each page:
+ - Homepage ()
+ - About
+ - Resources (Classes)
+ - Banner pushing upcoming events (new module)
+ - Has a Wordpress site?
+  - rootedunity.org (for her LLC)
+  - satyagaiagrace.com
+- Classes is most important, newsletter (nonexistent yet), then products
+
+I guide you in reconnecting with the magic already alive inside of you.
+
+------
+
+Sales:
+- biggest challenge to getting more sales?
+- biggest challenge to getting more leads?
+- biggest challenge to more renewals?
+- show the cost savings & less tooling
+

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>heal.me</title>
+
+  <link rel="stylesheet" href="stylesheets/app.css" />
+
+</head>
+<body>
+
+  <span class="h4 block mar-bot--16">heal.me style guide</span>
+
+  <!-- <div class="type-picker" tabindex="0">
+    <span class="change-type roboto selected" data-class="roboto">Roboto</span>
+    <span class="change-type open-sans" data-class="open-sans">Open Sans</span>
+    <span class="change-type dm-sans" data-class="dm-sans">DM Sans</span>
+    <span class="change-type inter" data-class="inter">Inter</span>
+    <span class="change-type system" data-class="system">System</span>
+  </div> -->
+
+  <section data-title="headers">
+    
+    <h1>Header 1</h1>
+
+    <hr />
+
+    <h2>Header 2</h2>
+
+    <hr />
+
+    <h3>Header 3</h3>
+
+    <hr />
+
+    <h4>Header 4</h4>
+
+    <hr />
+
+    <h5>Header 5</h5>
+
+  </section>
+
+  <section data-title="body copy">
+
+    <p class="body">
+      This is solely filler copy meant to give you a sense of how much copy to write. This is solely filler copy meant to give you a sense of how much copy to write.
+    </p>
+
+    <hr />
+
+    <!-- <p class="body--large">
+      This is large body copy.
+    </p>
+
+    <hr /> -->
+
+    <p class="body--small">
+      This is solely filler copy meant to give you a sense of how much copy to write. This is solely filler copy meant to give you a sense of how much copy to write. This is solely filler copy meant to give you a sense of how much copy to write.
+    </p>
+
+    <hr />
+
+    <p class="microcopy">
+      This is solely filler copy meant to give you a sense of how much copy to write.
+    </p>
+
+    <hr />
+
+    <p class="body">
+      This is a <a href="##">body link</a>.
+    </p>
+
+    <hr />
+
+    <span class="badge">Badge</span>
+
+  </section>
+
+  <section data-title="Forms & inputs">
+    
+    <label>
+      <span class="body--small">Email</span>
+      <input type="text" class="input" />
+      <small class="error-copy hide">Please enter a valid email.</small>
+      <small>We&rsquo;ll send your booking details here.</small>
+    </label>
+
+    <hr />
+
+    <label>
+      <span class="body--small">Required field</span>
+      <input type="text" class="input error" />
+      <small class="error-copy">Please fix this error.</small>
+      <small>Microcopy goes here.</small>
+    </label>
+
+    <hr />
+
+    <label>
+      <span class="body--small">Gender indentity</span>
+      <select class="input select">
+        <option value="">-- select --</option>
+        <option value="1">Female</option>
+        <option value="2">Male</option>
+        <option value="3">Non-binary</option>
+      </select>
+      <small class="error-copy hide">Please select a gender.</small>
+      <small>This is microcopy if needed.</small>
+    </label>
+
+    <hr />
+
+    <!-- <span class="block body--small">Please choose one:</span>
+    <div class="radios">
+      <label class="radio--inline">
+        <input type="radio" name="sample" class="input--radio" />
+        <span>One</span>
+      </label>
+      <label class="radio--inline">
+        <input type="radio" name="sample" class="input--radio" />
+        <span>Two</span>
+      </label>
+      <label class="radio--inline">
+        <input type="radio" name="sample" class="input--radio" />
+        <span>Three</span>
+      </label>
+    </div>
+
+    <hr /> -->
+
+    <span class="block body--small mar-bot--8">Please choose one:</span>
+    <div class="radios">
+      <label>
+        <input type="radio" name="sampler[1]" class="input--radio" />
+        <span>One</span>
+      </label>
+      <label>
+        <input type="radio" name="sampler[2]" class="input--radio" />
+        <span>Two</span>
+      </label>
+      <label>
+        <input type="radio" name="sampler[3]" class="input--radio" />
+        <span>Three</span>
+      </label>
+    </div>
+
+    <hr />
+
+    <span class="block body--small mar-bot--8">Please choose all that apply:</span>
+    <div class="checkboxes">
+      <label>
+        <input type="checkbox" name="samplerr[1]" class="input--checkbox" />
+        <span>One</span>
+      </label>
+      <label>
+        <input type="checkbox" name="samplerr[2]" class="input--checkbox" />
+        <span>Two</span>
+      </label>
+      <label>
+        <input type="checkbox" name="samplerr[3]" class="input--checkbox" />
+        <span>Three</span>
+      </label>
+    </div>
+
+  </section>
+
+  <section data-title="buttons">
+
+    <button class="button button--primary">Continue</button>
+
+    <hr />
+
+    <button class="button button--secondary">Secondary</button>
+
+    <hr />
+
+    <button class="button button--secondary button--small">Secondary (small)</button>
+
+    <small class="microcopy block mar-top--8">Note: Any button can be small.</small>
+
+    <hr />
+
+    <button class="button button--primary__ghost">Secondary (ghost)</button>
+
+    <hr />
+
+    <button class="button button--tertiary">Tertiary</button>
+
+    <hr />
+
+    <button class="button button--tertiary__ghost">Tertiary (ghost)</button>
+
+    <hr />
+
+    <button class="button button--primary button--cta">Min width</button>
+
+    <small class="microcopy block mar-top--8">For standalone CTAs to have more impact.</small>
+
+    <hr />
+
+    <button class="button button--primary__negative">Delete account</button>
+
+    <hr />
+
+    <button class="button button--image button--close">
+      <img src="images/icons/close.svg" alt="Close button" height="32" />
+    </button>
+
+    <hr />
+
+    <button class="button button--image button--navigation">
+      <img src="images/icons/caret--right.svg" alt="Next/previous button" height="32" />
+    </button>
+
+  </section>
+
+  <!-- <section>
+
+    <form action="###">
+
+      <label>
+        <span>Email</span>
+        <input type="text" class="input" />
+        <small class="error-copy hide">Please enter a valid email.</small>
+        <small>We&rsquo;ll send your booking details here.</small>
+      </label>
+
+      <hr />
+
+      <label>
+        <span>Gender indentity</span>
+        <select class="input select">
+          <option value="">-- select --</option>
+          <option value="1">Female</option>
+          <option value="2">Male</option>
+          <option value="3">Non-binary</option>
+        </select>
+        <small class="error-copy hide">Please select a gender.</small>
+        <small>This is microcopy if needed.</small>
+      </label>
+
+      <hr class="large" />
+
+      <button class="button button--primary">Continue</button>
+
+    </form>
+
+  </section> -->
+
+  <!-- <script src="scripts/app.js"></script> -->
+  
+</body>
+</html>

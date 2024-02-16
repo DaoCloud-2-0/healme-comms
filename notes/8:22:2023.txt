@@ -1,0 +1,42 @@
+Booking widget
+- remove loading state
+- pass in custom copy
+- apply data-attr to ANY element to open the booking widget
+
+Websites
+- Start for Melissa
+- Finish for Satya + Jean
+- How-to doc
+ - Train Miguel/Angie
+- Reach out process: include Snappr
+
+SaaS adds
+- Booking Widget
+- Group Bookings
+- Packages
+- Websites
+- Onboarding
+
+Platform adds
+- SEO work for high-intent traffic
+ - Which services are most wanted?
+ - Which services are most available?
+- Search experience (waaaay too many service options, the service doesn't match the result, etc.)
+ - Weird results VS what I'd expect for 'back pain' --> http://recordit.co/bO1JkDrgyD
+- Profile experience
+ - How many services are too many services? If you need to offer more than 4, is that good? How likely do these services get booked?
+- Client referrals
+- Reviews
+ - Rating
+ - Text-review for:
+  - Pro
+  - Service
+
+Design adds
+- UX/UI improvements to the pro experience (profile setup, using the product)
+- UX/UI improvements to the client experience (first time booking, rebooking, paying, etc.)
+- XYZ pro is using Heal.me for booking ---> how to keep it white-label and branded
+
+--------
+
+2 week sprints
